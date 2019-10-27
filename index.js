@@ -12,6 +12,11 @@ const myLib = new UtilLib()
 async function mainFunction() {
   try {
     const addr = "bitcoincash:qp3sn6vlwz28ntmf3wmyra7jqttfx7z6zgtkygjhc7"
+    console.log(`addr: ${addr}`)
+
+    const bchData = await myLib.getBchData(addr)
+
+    console.log(`bchData: ${JSON.stringify(bchData,null,2)}`)
   } catch(err) {
     console.error(`Error in main program: `, err)
   }

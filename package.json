@@ -4,11 +4,18 @@
   "description": "An example of using JS classes to help write unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index.js",
+    "test": "mocha test/unit/",
+    "test:integration": "mocha --timeout 25000 test/integration/"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@chris.troutner/bch-js": "^1.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0"
   }
 }
