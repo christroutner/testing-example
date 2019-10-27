@@ -1,0 +1,14 @@
+{
+  "name": "testing-example",
+  "version": "1.0.0",
+  "description": "An example of using JS classes to help write unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@chris.troutner/bch-js": "^1.6.1"
+  }
+}
